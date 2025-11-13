@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - العروسي - IPTV</title>
+    <meta name="description" content="تواصل معنا عبر واتساب أو البريد الإلكتروني">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                العروسي - IPTV
+            </a>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span class="menu-icon">☰</span>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="packages.html" class="nav-link">الباقات</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link active">اتصل بنا</a>
+                <a href="faq.html" class="nav-link">الأسئلة الشائعة</a>
+                <a href="https://wa.me/966542881139?text=أرغب+بالاشتراك+في+IPTV" target="_blank" class="btn-subscribe">
+                    اشترك الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">اتصل بنا</h1>
+            <p class="page-subtitle">نحن هنا لمساعدتك في أي وقت</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h2 class="form-title">أرسل لنا رسالة</h2>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" name="name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">
+                            إرسال عبر واتساب
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-card">
+                    <h2 class="info-title">معلومات الاتصال</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h3>واتساب</h3>
+                            <a href="https://wa.me/966542881139" target="_blank" class="info-link">
+                                +966542881139
+                            </a>
+                            <p class="info-desc">تواصل معنا مباشرة عبر واتساب</p>
+                        </div>
+                    </div>
+
+
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h3>ساعات العمل</h3>
+                            <p class="info-text">متاحون 24/7</p>
+                            <p class="info-desc">فريق الدعم متوفر على مدار الساعة</p>
+                        </div>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>تحتاج مساعدة فورية؟</h3>
+                        <p>تواصل معنا الآن عبر واتساب</p>
+                        <a href="https://wa.me/966542881139?text=أحتاج+مساعدة" target="_blank" class="btn-secondary btn-full">
+                            تواصل الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">العروسي - IPTV</h3>
+                    <p class="footer-text">أفضل خدمة IPTV في المملكة العربية السعودية</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="packages.html" class="footer-link">الباقات</a>
+                    <a href="about.html" class="footer-link">من نحن</a>
+                    <a href="contact.html" class="footer-link">اتصل بنا</a>
+                    <a href="faq.html" class="footer-link">الأسئلة الشائعة</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">تواصل معنا</h4>
+                    <a href="https://wa.me/966542881139" target="_blank" class="footer-link">📱 واتساب: +966542881139</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 العروسي - IPTV. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة - العروسي - IPTV</title>
+    <meta name="description" content="إجابات على الأسئلة الأكثر شيوعاً حول خدمة IPTV">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                العروسي - IPTV
+            </a>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span class="menu-icon">☰</span>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="packages.html" class="nav-link">الباقات</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link">اتصل بنا</a>
+                <a href="faq.html" class="nav-link active">الأسئلة الشائعة</a>
+                <a href="https://wa.me/966542881139?text=أرغب+بالاشتراك+في+IPTV" target="_blank" class="btn-subscribe">
+                    اشترك الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">الأسئلة الشائعة</h1>
+            <p class="page-subtitle">إجابات على جميع استفساراتك حول خدمة IPTV</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>ما هو IPTV؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>IPTV هو اختصار لـ Internet Protocol Television، وهي تقنية لبث القنوات التلفزيونية والمحتوى المرئي عبر الإنترنت بدلاً من الطرق التقليدية مثل الأقمار الصناعية. توفر هذه التقنية جودة عالية ومرونة في المشاهدة على مختلف الأجهزة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>ما هي الأجهزة المدعومة؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>خدمتنا تعمل على جميع الأجهزة الذكية:</p>
+                        <ul>
+                            <li>Smart TV (سامسونج، LG، سوني، إلخ)</li>
+                            <li>أجهزة Android (هواتف، تابلت، Android Box)</li>
+                            <li>أجهزة iOS (iPhone, iPad)</li>
+                            <li>أجهزة الكمبيوتر (Windows, Mac)</li>
+                            <li>Amazon Firestick</li>
+                            <li>MAG Box</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>كم سرعة الإنترنت المطلوبة؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>للحصول على أفضل تجربة مشاهدة، نوصي بالسرعات التالية:</p>
+                        <ul>
+                            <li>جودة SD: 5 Mbps</li>
+                            <li>جودة HD: 10 Mbps</li>
+                            <li>جودة 4K: 25 Mbps</li>
+                            <li>جودة 8K: 50 Mbps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>هل يمكنني تجربة الخدمة قبل الاشتراك؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم! نوفر تجربة مجانية لمدة 24 ساعة لجميع العملاء الجدد. يمكنك طلب التجربة عبر التواصل معنا على واتساب وسنقوم بتفعيل الخدمة فوراً حتى تتمكن من تجربتها قبل الاشتراك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>كم عدد الأجهزة التي يمكنني استخدامها؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يعتمد ذلك على الباقة المختارة:</p>
+                        <ul>
+                            <li>الباقة الشهرية: جهاز واحد</li>
+                            <li>الباقة نصف السنوية: جهازين</li>
+                            <li>الباقة السنوية: 3 أجهزة</li>
+                            <li>الباقة الماسية: 5 أجهزة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>ما هي طرق الدفع المتاحة؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نوفر عدة طرق للدفع:</p>
+                        <ul>
+                            <li>تحويل بنكي</li>
+                            <li>مدى</li>
+                            <li>بطاقات الائتمان (Visa, Mastercard)</li>
+                            <li>محافظ إلكترونية (STC Pay, Apple Pay)</li>
+                        </ul>
+                        <p>للمزيد من التفاصيل، تواصل معنا عبر واتساب.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>كيف أقوم بالتفعيل بعد الاشتراك؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بعد إتمام الاشتراك، سنرسل لك فوراً:</p>
+                        <ul>
+                            <li>رابط تحميل التطبيق المناسب لجهازك</li>
+                            <li>اسم المستخدم وكلمة المرور</li>
+                            <li>دليل التثبيت والتفعيل</li>
+                            <li>فيديو توضيحي للإعداد</li>
+                        </ul>
+                        <p>فريق الدعم الفني متاح لمساعدتك في أي خطوة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>هل الخدمة قانونية؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، نحن نقدم خدمة IPTV قانونية ومرخصة. جميع المحتوى المقدم يتم بثه بموجب اتفاقيات قانونية مع مزودي المحتوى.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>ماذا لو واجهت مشكلة تقنية؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>فريق الدعم الفني لدينا متاح 24/7 لمساعدتك. يمكنك التواصل معنا عبر:</p>
+                        <ul>
+                            <li>واتساب: +966542881139</li>
+                        </ul>
+                        <p>نلتزم بالرد على جميع الاستفسارات في أسرع وقت ممكن.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>هل يمكن تجديد الاشتراك تلقائياً؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، يمكنك تفعيل خاصية التجديد التلقائي لاشتراكك. سنقوم بإرسال تذكير لك قبل انتهاء الاشتراك بأسبوع، ويمكنك اختيار التجديد التلقائي أو اليدوي حسب رغبتك.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still have questions -->
+            <div class="faq-cta">
+                <h2>لم تجد إجابة لسؤالك؟</h2>
+                <p>تواصل معنا مباشرة وسنكون سعداء بمساعدتك</p>
+                <a href="https://wa.me/966542881139?text=لدي+سؤال+حول+خدمة+IPTV" target="_blank" class="btn-primary btn-large btn-glow">
+                    تواصل معنا الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">العروسي - IPTV</h3>
+                    <p class="footer-text">أفضل خدمة IPTV في المملكة العربية السعودية</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="packages.html" class="footer-link">الباقات</a>
+                    <a href="about.html" class="footer-link">من نحن</a>
+                    <a href="contact.html" class="footer-link">اتصل بنا</a>
+                    <a href="faq.html" class="footer-link">الأسئلة الشائعة</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">تواصل معنا</h4>
+                    <a href="https://wa.me/966542881139" target="_blank" class="footer-link">📱 واتساب: +966542881139</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 العروسي - IPTV. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
